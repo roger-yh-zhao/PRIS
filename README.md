@@ -14,23 +14,23 @@ pip install -r ./requirements_pip.txt
 
 Example
 -------
-Generate pocket:
-````
-cd test
-python pocket.py --name 1qne
-````
-
-Reorder the residue/nucleotide of protein/nucleic acid:
-````
-python reorder.py --name 1qne
-````
 
 Convert pdb structure to graph:
 ````
-python pdb2graph.py -idf ids.txt
+python pdb2graph.py
 ````
 
-Output the final score:
+Output the pwm:
 ````
-python test.py -of score.csv
+python test_model.py -m weight_MS2.pth -featsl 27 -e gps -gps_local ASGAT -gps_global SparseAttention
+````
+
+Convert pwm to score
+````
+python pwm2score.py
+````
+
+calculate metrics
+````
+python metric.py
 ````
