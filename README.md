@@ -8,8 +8,11 @@
 Build environment
 -------
 ````
-conda create --prefix xxx --file ./requirements_conda.txt      
-pip install -r ./requirements_pip.txt
+# pri.tar.gz is available at https://doi.org/10.5281/zenodo.22632776
+mv pri.tar.gz yourpath/anaconda3/envs/pri/pri.tar.gz  
+cd yourpath/anaconda3/envs/pri
+tar -xzvf pri.tar.gz
+conda activate pri
 ````
 
 Example
@@ -28,6 +31,7 @@ python test_model.py -m weight_MS2.pth -featsl 27 -e gps -gps_local ASGAT -gps_g
 Convert pwm to score:
 ````
 python pwm2score.py
+
 ````
 
 Calculate metrics:
