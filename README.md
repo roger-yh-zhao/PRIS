@@ -8,7 +8,7 @@
 Build environment
 -------
 ````
-# pri.tar.gz is available at https://doi.org/10.5281/zenodo.22632776
+# pri.tar.gz is available at https://doi.org/10.5281/zenodo.22651663
 mv pri.tar.gz yourpath/anaconda3/envs/pri/pri.tar.gz  
 cd yourpath/anaconda3/envs/pri
 tar -xzvf pri.tar.gz
